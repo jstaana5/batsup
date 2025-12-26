@@ -30,7 +30,8 @@ export default function App() {
         </nav>
 
         <Link
-          to="/"
+          to="/batsup/"
+
           className="text-xl font-serif order-1 md:order-2 text-secondary"
         >
           bat · sup · lok · gai
