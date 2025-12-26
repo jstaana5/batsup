@@ -30,7 +30,18 @@ export default function Blog() {
         <div className="grid md:grid-cols-2 gap-12 items-start mb-20">
 
           {/* IMAGE */}
-          <div className="w-full h-72 rounded-lg shadow-md overflow-hidden bg-gray-200">
+          <div
+            className="
+              w-full 
+              aspect-square 
+              rounded-full 
+              overflow-hidden 
+              shadow-md 
+              bg-gray-200
+              md:rounded-lg 
+              md:aspect-[4/3]
+            "
+          >
             <img
               src={noodle}
               alt="Featured Story"
@@ -63,7 +74,18 @@ export default function Blog() {
 
           {/* POST 1 */}
           <div className="space-y-4">
-            <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
+            <div
+              className="
+                w-full 
+                aspect-square 
+                rounded-full 
+                overflow-hidden 
+                shadow-md 
+                bg-gray-200
+                md:rounded-lg 
+                md:aspect-[4/3]
+              "
+            >
               <img
                 src={batsup}
                 alt="Blog Post 1"
@@ -85,7 +107,18 @@ export default function Blog() {
 
           {/* POST 2 */}
           <div className="space-y-4">
-            <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
+            <div
+              className="
+                w-full 
+                aspect-square 
+                rounded-full 
+                overflow-hidden 
+                shadow-md 
+                bg-gray-200
+                md:rounded-lg 
+                md:aspect-[4/3]
+              "
+            >
               <img
                 src={hk}
                 alt="Blog Post 2"
@@ -107,7 +140,18 @@ export default function Blog() {
 
           {/* POST 3 */}
           <div className="space-y-4">
-            <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
+            <div
+              className="
+                w-full 
+                aspect-square 
+                rounded-full 
+                overflow-hidden 
+                shadow-md 
+                bg-gray-200
+                md:rounded-lg 
+                md:aspect-[4/3]
+              "
+            >
               <img
                 src={bar}
                 alt="Blog Post 3"
@@ -129,7 +173,18 @@ export default function Blog() {
 
           {/* POST 4 */}
           <div className="space-y-4">
-            <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
+            <div
+              className="
+                w-full 
+                aspect-square 
+                rounded-full 
+                overflow-hidden 
+                shadow-md 
+                bg-gray-200
+                md:rounded-lg 
+                md:aspect-[4/3]
+              "
+            >
               <img
                 src={nail}
                 alt="Blog Post 4"
@@ -151,7 +206,18 @@ export default function Blog() {
 
           {/* POST 5 */}
           <div className="space-y-4">
-            <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
+            <div
+              className="
+                w-full 
+                aspect-square 
+                rounded-full 
+                overflow-hidden 
+                shadow-md 
+                bg-gray-200
+                md:rounded-lg 
+                md:aspect-[4/3]
+              "
+            >
               <img
                 src={bk}
                 alt="Blog Post 5"
@@ -172,7 +238,18 @@ export default function Blog() {
 
           {/* POST 6 */}
           <div className="space-y-4">
-            <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
+            <div
+              className="
+                w-full 
+                aspect-square 
+                rounded-full 
+                overflow-hidden 
+                shadow-md 
+                bg-gray-200
+                md:rounded-lg 
+                md:aspect-[4/3]
+              "
+            >
               <img
                 src={noodle}
                 alt="Blog Post 6"
