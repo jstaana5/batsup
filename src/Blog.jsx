@@ -1,5 +1,13 @@
 import React from "react";
 
+/* --- IMPORT ALL IMAGES FOR GITHUB PAGES COMPATIBILITY --- */
+import noodle from "/noodle.jpg";
+import batsup from "/batsup.jpg";
+import hk from "/hk.jpg";
+import bar from "/bar.jpg";
+import nail from "/nail.jpg";
+import bk from "/bk.jpg";
+
 export default function Blog() {
   return (
     <div className="bg-white text-gray-800">
@@ -24,7 +32,7 @@ export default function Blog() {
           {/* IMAGE */}
           <div className="w-full h-72 rounded-lg shadow-md overflow-hidden bg-gray-200">
             <img
-              src="/noodle.jpg"
+              src={noodle}
               alt="Featured Story"
               className="w-full h-full object-cover"
             />
@@ -57,7 +65,7 @@ export default function Blog() {
           <div className="space-y-4">
             <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
               <img
-                src="/batsup.jpg"
+                src={batsup}
                 alt="Blog Post 1"
                 className="w-full h-full object-cover"
               />
@@ -79,7 +87,7 @@ export default function Blog() {
           <div className="space-y-4">
             <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
               <img
-                src="/hk.jpg"
+                src={hk}
                 alt="Blog Post 2"
                 className="w-full h-full object-cover"
               />
@@ -101,7 +109,7 @@ export default function Blog() {
           <div className="space-y-4">
             <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
               <img
-                src="/bar.jpg"
+                src={bar}
                 alt="Blog Post 3"
                 className="w-full h-full object-cover"
               />
@@ -123,7 +131,7 @@ export default function Blog() {
           <div className="space-y-4">
             <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
               <img
-                src="/nail.jpg"
+                src={nail}
                 alt="Blog Post 4"
                 className="w-full h-full object-cover"
               />
@@ -145,7 +153,7 @@ export default function Blog() {
           <div className="space-y-4">
             <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
               <img
-                src="/bk.jpg"
+                src={bk}
                 alt="Blog Post 5"
                 className="w-full h-full object-cover"
               />
@@ -166,7 +174,7 @@ export default function Blog() {
           <div className="space-y-4">
             <div className="w-full h-56 rounded-lg shadow-md overflow-hidden bg-gray-200">
               <img
-                src="/noodle.jpg"
+                src={noodle}
                 alt="Blog Post 6"
                 className="w-full h-full object-cover"
               />
