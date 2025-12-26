@@ -203,7 +203,7 @@ export default function App() {
 
         <div className="flex space-x-6 text-base">
           <Link to="/involve" className="hover:underline">Get Involved</Link>
-          <Link to="/support" className="hover:underline">Support</Link>
+          <Link to="/support" className="hover:underline">Explore</Link>
         </div>
       </footer>
 
