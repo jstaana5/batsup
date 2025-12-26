@@ -9,6 +9,13 @@ import About from "./About.jsx";
 import Blog from "./Blog.jsx";
 import Support from "./Support.jsx";
 
+/* --- IMPORT ALL IMAGES FOR GITHUB PAGES COMPATIBILITY --- */
+import batsup from "/batsup.jpg";
+import bk from "/bk.jpg";
+import noodle from "/noodle.jpg";
+import hk from "/hk.jpg";
+import nail from "/nail.jpg";
+
 export default function App() {
   return (
     <div className="bg-white font-sans text-gray-800">
@@ -68,7 +75,7 @@ export default function App() {
                   </Link>
                 </div>
 
-                <img src="/batsup.jpg" alt="batsup" />
+                <img src={batsup} alt="batsup" />
               </section>
 
               {/* ANGLED SEPARATOR */}
@@ -84,8 +91,8 @@ export default function App() {
                 <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
                   <div className="w-full h-64 bg-gray-300 rounded-lg shadow-md overflow-hidden">
                     <img
-                      src="/bk.jpg"
-                      alt="batsup"
+                      src={bk}
+                      alt="Nai Brothers' Bakery"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -122,7 +129,7 @@ export default function App() {
                   {/* RIGHT SIDE — IMAGE */}
                   <div className="w-full h-64 rounded-lg shadow-md overflow-hidden">
                     <img
-                      src="/noodle.jpg"
+                      src={noodle}
                       alt="Ji Bei Chuan Noodles"
                       className="w-full h-full object-cover"
                     />
@@ -142,36 +149,36 @@ export default function App() {
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-10 text-center">
-                {[
-                  { label: "Restaurant", name: "HK Tea and Sushi", img: "/hk.jpg" },
-                  { label: "Beauty", name: "Pinky Salon", img: "/nail.jpg" },
-                  { label: "Cafe", name: "Next Move Cafe", img: "/bk.jpg" },
-                ].map((item) => (
-                  <div key={item.name} className="space-y-2">
-                    
-                    {/* IMAGE BLOCK */}
-                    <div className="w-full h-48 rounded-lg shadow-md relative overflow-hidden">
-                      <img
-                        src={item.img}
-                        alt={item.name}
-                        className="w-full h-full object-cover"
-                      />
-                      <span className="absolute top-2 left-2 text-xs font-semibold px-2 py-1 rounded-sm uppercase bg-primary text-cream">
-                        {item.label}
-                      </span>
+                  {[
+                    { label: "Restaurant", name: "HK Tea and Sushi", img: hk },
+                    { label: "Beauty", name: "Pinky Salon", img: nail },
+                    { label: "Cafe", name: "Next Move Cafe", img: bk },
+                  ].map((item) => (
+                    <div key={item.name} className="space-y-2">
+                      
+                      {/* IMAGE BLOCK */}
+                      <div className="w-full h-48 rounded-lg shadow-md relative overflow-hidden">
+                        <img
+                          src={item.img}
+                          alt={item.name}
+                          className="w-full h-full object-cover"
+                        />
+                        <span className="absolute top-2 left-2 text-xs font-semibold px-2 py-1 rounded-sm uppercase bg-primary text-cream">
+                          {item.label}
+                        </span>
+                      </div>
+
+                      {/* NAME */}
+                      <p className="mt-2 font-semibold">{item.name}</p>
                     </div>
-
-                    {/* NAME */}
-                    <p className="mt-2 font-semibold">{item.name}</p>
-                  </div>
-                ))}
-              </div>
-
+                  ))}
+                </div>
 
                 <div className="flex justify-center mt-12">
                   <Link
-                  to ="/blog"
-                  className="bg-primary text-cream text-sm px-4 py-2 rounded-md shadow-sm hover:opacity-90">
+                    to="/blog"
+                    className="bg-primary text-cream text-sm px-4 py-2 rounded-md shadow-sm hover:opacity-90"
+                  >
                     Read More
                   </Link>
                 </div>
@@ -184,9 +191,8 @@ export default function App() {
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/involve" element={<Involve />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog/>} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/support" element={<Support />} />
-
 
       </Routes>
 
