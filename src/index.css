@@ -17,3 +17,44 @@ code {
   background-position: 0 0, 40px 40px;
 }
 
+/* Decorative circles: position to hug centered content, smooth scaling, hide on small viewports */
+:root {
+  --content-max: 56rem; /* Tailwind max-w-4xl */
+  --content-half: 28rem;
+  --gutter: 1rem; /* distance from content edge */
+  --circle-offset: calc(var(--content-half) + var(--gutter));
+}
+
+.circle-stack {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 3vw, 2.5rem);
+  pointer-events: none;
+}
+
+.decor-circle {
+  width: clamp(2rem, 6vw, 5rem);
+  height: clamp(2rem, 6vw, 5rem);
+  border-radius: 9999px;
+  flex: 0 0 auto;
+}
+
+.circle-stack-left {
+  left: calc((50% - var(--content-half)) / 2);
+  transform: translateX(-50%);
+}
+
+.circle-stack-right {
+  /* compute midpoint between content right edge and page right edge */
+  left: calc(100% - ((50% - var(--content-half)) / 2));
+  transform: translateX(-50%);
+}
+
+/* hide when viewport too narrow to avoid overlap (about 1024px) */
+@media (max-width: 64rem) {
+  .circle-stack-left,
+  .circle-stack-right {
+    display: none;
+  }
+}
+

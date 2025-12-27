@@ -5,24 +5,24 @@ export default function About() {
     <div className="relative bg-white text-gray-800">
 
       {/* LEFT SIDE CIRCLES */}
-      <div className="flex flex-col space-y-10 absolute left-10 top-80 z-20">
-        <div className="w-20 h-20 rounded-full bg-[#F4C430]" />
-        <div className="w-20 h-20 rounded-full bg-[#E97451]" />
-        <div className="w-20 h-20 rounded-full bg-[#C04000]" />
-        <div className="w-20 h-20 rounded-full bg-[#8B0000]" />
-        <div className="w-20 h-20 rounded-full bg-[#5D3A00]" />
-        <div className="w-20 h-20 rounded-full bg-[#3B1F2B]" />
-      </div>
+        <div className="circle-stack circle-stack-left absolute top-80 z-0">
+        <div className="decor-circle bg-[#F4C430]" />
+        <div className="decor-circle bg-[#E97451]" />
+        <div className="decor-circle bg-[#C04000]" />
+        <div className="decor-circle bg-[#8B0000]" />
+        <div className="decor-circle bg-[#5D3A00]" />
+        <div className="decor-circle bg-[#3B1F2B]" />
+        </div>
 
       {/* RIGHT SIDE CIRCLES */}
-      <div className="flex flex-col space-y-10 absolute right-10 top-80 z-20">
-        <div className="w-20 h-20 rounded-full bg-[#F4C430]" />
-        <div className="w-20 h-20 rounded-full bg-[#E97451]" />
-        <div className="w-20 h-20 rounded-full bg-[#C04000]" />
-        <div className="w-20 h-20 rounded-full bg-[#8B0000]" />
-        <div className="w-20 h-20 rounded-full bg-[#5D3A00]" />
-        <div className="w-20 h-20 rounded-full bg-[#3B1F2B]" />
-      </div>
+        <div className="circle-stack circle-stack-right absolute top-80 z-0">
+        <div className="decor-circle bg-[#F4C430]" />
+        <div className="decor-circle bg-[#E97451]" />
+        <div className="decor-circle bg-[#C04000]" />
+        <div className="decor-circle bg-[#8B0000]" />
+        <div className="decor-circle bg-[#5D3A00]" />
+        <div className="decor-circle bg-[#3B1F2B]" />
+        </div>
 
       {/* HERO */}
       <section className="bg-primary text-secondary py-20 px-10 text-center relative z-10">
