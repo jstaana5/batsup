@@ -26,9 +26,9 @@ export default function App() {
 
         {/* Desktop navs hidden on small screens */}
         <nav className="hidden md:flex space-x-4 md:space-x-6 order-2 md:order-1">
-          <Link to="/about" className="hover:underline">About Us</Link>
-          <Link to="/catalog" className="hover:underline">Catalog</Link>
-          <Link to="/blog" className="hover:underline">Blog</Link>
+          <Link to="/about" className="hover:underline whitespace-nowrap">About Us</Link>
+          <Link to="/catalog" className="hover:underline whitespace-nowrap">Catalog</Link>
+          <Link to="/blog" className="hover:underline whitespace-nowrap">Blog</Link>
         </nav>
         {/* Title + Hamburger row (mobile: title left, hamburger top-right; desktop: title centered) */}
         <div className="w-full flex items-center justify-between md:justify-center order-1 md:order-2">
@@ -56,19 +56,19 @@ export default function App() {
         </div>
 
         <nav className="hidden md:flex space-x-4 md:space-x-6 order-3">
-          <Link to="/involve" className="hover:underline">Get Involved</Link>
-          <Link to="/support" className="hover:underline">Explore</Link>
+          <Link to="/involve" className="hover:underline whitespace-nowrap">Get Involved</Link>
+          <Link to="/support" className="hover:underline whitespace-nowrap">Explore</Link>
         </nav>
 
         {/* Mobile menu */}
         {menuOpen && (
           <div className="md:hidden absolute top-full right-4 mt-2 w-48 bg-primary text-secondary px-4 py-3 z-40 shadow-lg rounded-md">
             <div className="flex flex-col space-y-3 text-right">
-              <Link to="/about" onClick={() => setMenuOpen(false)} className="hover:underline">About Us</Link>
-              <Link to="/catalog" onClick={() => setMenuOpen(false)} className="hover:underline">Catalog</Link>
-              <Link to="/blog" onClick={() => setMenuOpen(false)} className="hover:underline">Blog</Link>
-              <Link to="/involve" onClick={() => setMenuOpen(false)} className="hover:underline">Get Involved</Link>
-              <Link to="/support" onClick={() => setMenuOpen(false)} className="hover:underline">Explore</Link>
+              <Link to="/about" onClick={() => setMenuOpen(false)} className="hover:underline whitespace-nowrap">About Us</Link>
+              <Link to="/catalog" onClick={() => setMenuOpen(false)} className="hover:underline whitespace-nowrap">Catalog</Link>
+              <Link to="/blog" onClick={() => setMenuOpen(false)} className="hover:underline whitespace-nowrap">Blog</Link>
+              <Link to="/involve" onClick={() => setMenuOpen(false)} className="hover:underline whitespace-nowrap">Get Involved</Link>
+              <Link to="/support" onClick={() => setMenuOpen(false)} className="hover:underline whitespace-nowrap">Explore</Link>
             </div>
           </div>
         )}
